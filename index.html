@@ -2,14 +2,12 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
+    <title>Compra de productos</title>
 
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #f2f2f2;
-            margin: 0;
+            background-color: #f2f2f2;
             padding: 40px;
         }
 
@@ -17,9 +15,8 @@
             width: 400px;
             margin: auto;
             background: white;
-            padding: 30px;
+            padding: 25px;
             border-radius: 10px;
-            box-shadow: 0 0 10px #ccc;
         }
 
         h1 {
@@ -41,12 +38,11 @@
         button {
             width: 100%;
             padding: 12px;
-            margin-top: 25px;
-            background: #333;
+            margin-top: 20px;
+            background-color: #222;
             color: white;
             border: none;
             border-radius: 5px;
-            cursor: pointer;
         }
     </style>
 </head>
@@ -55,9 +51,9 @@
 
 <div class="contenedor">
 
-    <h1>Registro de productos</h1>
+    <h1>Productos</h1>
 
-    <form action="procesar.php" method="POST">
+    <form action="resultado.php" method="POST">
 
         <label>Nombre del producto 1:</label>
         <input type="text" name="producto1" required>
