@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de productos</title>
 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .contenedor {
+            width: 400px;
+            margin: 60px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 25px;
+            padding: 12px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1>Compra de productos</h1>
+
+        <form action="procesar.php" method="POST">
+
+            <label for="producto1">Nombre del producto 1:</label>
+            <input type="text" id="producto1" name="producto1" required>
+
+            <label for="precio1">Precio del producto 1:</label>
+            <input type="number" id="precio1" name="precio1" step="0.01" min="0" required>
+
+            <label for="producto2">Nombre del producto 2:</label>
+            <input type="text" id="producto2" name="producto2" required>
+
+            <label for="precio2">Precio del producto 2:</label>
+            <input type="number" id="precio2" name="precio2" step="0.01" min="0" required>
+
+            <label for="producto3">Nombre del producto 3:</label>
+            <input type="text" id="producto3" name="producto3" required>
+
+            <label for="precio3">Precio del producto 3:</label>
+            <input type="number" id="precio3" name="precio3" step="0.01" min="0" required>
+
+            <button type="submit">Calcular total</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
